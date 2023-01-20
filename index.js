@@ -1,3 +1,5 @@
+var mval = "";
+
 function factorialize(num) {
     var result = num;
     if (num === 0 || num === 1) 
@@ -15,7 +17,6 @@ function del() {
     document.getElementById('screen').value = x.substr(0, x.length - 1);
 }
 
-// document.addEventListener("click", leftbracket);
 function leftbracket() {
 n = document.getElementById('screen').value
   if(n == 0){
@@ -60,6 +61,17 @@ function lnbasee(){
     document.getElementById("screen").value = Math.pow(e,parseFloat(document.calc.text.value));   
 }
 
+function ex(){
+  w = document.getElementById('screen').value
+  if(w== 0){
+    document.getElementById('screen').value="2.314";
+  }
+  else {
+    document.getElementById('screen').value+="*2.314";
+  }
+  console.log(w)
+}
+
 function pie(){
     z = document.getElementById('screen').value
       if(z == 0){
@@ -68,5 +80,32 @@ function pie(){
       else {
         document.getElementById('screen').value+="*3.14";
       }
-      console.log(y)
+      console.log(z)
+} 
+
+
+function mvalue(q){
+  
+  if(q == "MR"){
+      console.log(mval)
+      document.getElementById('screen').value=mval;
+      console.log('MR')
+  }
+  else if (q == "MC"){
+    mval =  0;
+    console.log('MC')
+  }
+  else if (q == "MS"){
+    mval = document.calc.text.value;
+    document.calc.text.value = "0";
+     console.log('MS')
+     console.log(mval)
+  }
+  else if (q == "M+"){
+    document.getElementById('screen').value+="+"+mval;
+  }
+  else if (q == "M-") {
+    document.getElementById('screen').value+="-"+mval; 
+  }
 }
+

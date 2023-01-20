@@ -15,7 +15,7 @@ body{
 .container{
     width: 400px;
     height: auto;
-    background-color: grey;
+    background-color: darkgrey;
     border: 0px solid #f3f3f4;
 }
 
@@ -38,7 +38,6 @@ body{
     align-items: center;
     flex-flow: wrap;
     padding: 5px;
-    /* margin-top: 10px; */
 }
 
 button{
@@ -47,9 +46,13 @@ button{
     height: 40px;
     margin: 5px 1px;
     cursor: pointer;
-    background-color: #f8f8f8;
     border: 0;
     font-size: 15px;
+}
+
+button:hover{
+    color: red;
+    background-color: lightblue;
 }
 
 .btn1{
@@ -60,11 +63,7 @@ button{
 
 
 .btn1 button{
-        /* padding: 0;
-    margin: 0;
-    border: 0; */
-    width: 70px;  
-  
+      width: 70px;  
 }
 
 .btn2{
@@ -73,12 +72,6 @@ button{
     padding: 0px;
    
 }
-
-/* button .btn2{
-    padding: 0;
-    margin: 0;
-    border: 0;
-} */
 
 .btn2 button{
     width: 67px;
@@ -96,7 +89,15 @@ button{
 }
 
 .btn3 img{
-    /* margin: auto; */
+  
     margin-bottom: 5px;
     background-color: #f1f2f3;
+}
+
+.blue{
+    background-color: #91c1e7;
+}
+
+.marine{
+    background-color: white;
 }
