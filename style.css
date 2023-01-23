@@ -150,10 +150,16 @@ body {
     justify-content: center;
     padding-top: 10px;
   }
+
+   .pod {
+    width: 1000px !important;
+    padding-left: 335px;
+  }
   .all-product .spacing {
     display: flex;
     flex-direction: row;
-    width: 1554px;
+    width: 1568px;
+    /* width: 1554px; */
     align-content: space-between;
     align-items: center;
   }
@@ -192,7 +198,7 @@ body {
     display: flex;
     align-content: flex-end;
     margin-left: auto;
-    margin-right: 250px;
+    margin-right: 60px;
   }
   .all-product .spacing .cen .bor .but1 button {
     background-color: #2874f0;
@@ -211,7 +217,7 @@ body {
     display: flex;
     align-content: flex-end;
     margin-left: auto;
-    margin-right: 70px;
+    margin-right: 60px;
   }
   .all-product .spacing .cen .bor .but2 button {
     background-color: #2874f0;
@@ -268,7 +274,8 @@ body {
   }
   .all-product .spacing .arrow {
     position: absolute;
-    right: 415px;
+    right: 425px;
+    /* right: 415px; */
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -289,6 +296,7 @@ body {
     height: 352px;
     width: 300px;
     position: absolute;
-    right: 115px;
+    right: 110px;
+    /* right: 115px; */
     align-items: center;
   }
